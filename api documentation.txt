@@ -1,0 +1,69 @@
+WeatherInsight
+WeatherInsight is a Tkinter-based weather application that fetches and displays current weather data using the OpenWeatherMap API and VisualCrossing API. It provides information on temperature, weather conditions, wind speed, and sunrise/sunset times for a given city.
+
+APIs Used
+OpenWeatherMap API
+The OpenWeatherMap API provides real-time weather information including temperature, wind speed, and weather conditions.
+
+Base URL: http://api.openweathermap.org/data/2.5/weather
+API Key: You can get your API key by signing up on the OpenWeatherMap website.
+Parameters:
+q (required): The name of the city.
+appid (required): Your OpenWeatherMap API key.
+units (optional): To receive temperature data in metric units (e.g., Celsius), set units=metric.
+Example Request:
+
+bash
+Copy code
+http://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric
+VisualCrossing API
+The VisualCrossing API provides detailed weather forecast information, including hourly weather data.
+
+Base URL: https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/
+API Key: Get your API key from the VisualCrossing website.
+Parameters:
+location (required): The name of the location (e.g., city, town).
+key (required): Your VisualCrossing API key.
+Example Request:
+
+bash
+Copy code
+https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/London?key=YOUR_API_KEY
+How to Use
+Clone the repository and install the necessary dependencies:
+
+bash
+Copy code
+git clone https://github.com/your-username/WeatherInsight.git
+cd WeatherInsight
+pip install -r requirements.txt
+Update the owm_api_key and vc_api_key variables in main.py with your respective API keys:
+
+python
+Copy code
+owm_api_key = "YOUR_OPENWEATHERMAP_API_KEY"
+vc_api_key = "YOUR_VISUALCROSSING_API_KEY"
+Run the application:
+
+bash
+Copy code
+python main.py
+Features
+Fetches real-time weather data using OpenWeatherMap API.
+Provides hourly weather forecasts with VisualCrossing API.
+Displays the following details:
+Temperature in Celsius.
+Weather condition (e.g., sunny, cloudy).
+Wind speed in meters/second.
+Sunrise and sunset times.
+Local time for the selected city.
+Screenshots
+Add relevant screenshots here of the app's interface.
+
+Requirements
+Python 3.x
+Required packages (can be installed via pip install -r requirements.txt):
+requests
+tkinter
+Pillow
+pytz

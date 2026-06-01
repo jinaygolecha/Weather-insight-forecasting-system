@@ -1,0 +1,64 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+
+venv/
+env/
+ENV/
+
+# Build Files
+
+build/
+dist/
+*.spec
+
+# IDE
+
+.vscode/
+.idea/
+
+# Logs
+
+*.log
+
+# OS Files
+
+Thumbs.db
+.DS_Store
+
+# API Secrets
+
+.env
+
+# Cache
+
+.pytest_cache/
+.mypy_cache/
+
+# Temporary Files
+
+*.tmp
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Generated Files
+
+*.exe
+
+# Screenshots Cache
+
+Screenshots/.cache/
+
+# Qodo
+
+.qodo/
+
+# Distribution Folder
+
+.dist/
